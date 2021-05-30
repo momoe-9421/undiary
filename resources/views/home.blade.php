@@ -1,23 +1,38 @@
 @extends('layouts.app')
-
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+<v-sheet height="600">
+    <v-calendar
+        ref="calendar"
+        v-model="value"
+        :weekdays="weekday"
+        :type="type"
+    >
+        <template v-slot:day="{date}">
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
+            <div v-if="event[date]" class="text-center">
+                <img class="mx-auto" style="width:50px;height:50px" :src="event[date]">
             </div>
-        </div>
-    </div>
-</div>
+        </template>
+    </v-calendar>
+</v-sheet>
+@endsection
+@section('javascript')
+<script>
+    new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        delimiters: ['[[', ']]'],
+        data: () => ({
+            drawer: false,
+            group: null,
+            type: 'month',
+            mode: 'stack',
+            weekday: [0, 1, 2, 3, 4, 5, 6],
+            value: '',
+            event: {
+                '2021-05-30':"https://thumb.ac-illust.com/6d/6def535a25e2d8239ad5b85b3dfa1557_w.jpg",
+            },
+        }),
+    })
+</script>
 @endsection
