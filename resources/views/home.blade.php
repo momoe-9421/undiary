@@ -30,7 +30,7 @@
             weekday: [0, 1, 2, 3, 4, 5, 6],
             value: '',
             event: {
-                '2021-05-30':"https://thumb.ac-illust.com/6d/6def535a25e2d8239ad5b85b3dfa1557_w.jpg",
+                '2021-05-30':"{{asset('/img/下痢.jpg')}}",
             },
         }),
     })
