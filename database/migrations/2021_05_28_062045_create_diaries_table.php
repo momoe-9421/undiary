@@ -17,7 +17,8 @@ class CreateDiariesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('user_id');
             $table->text('status');
-            $table->datetime('datetime');
+            $table->date('date');
+            $table->time('time');
             $table->text('momentum');
             $table->timestamps();
         });

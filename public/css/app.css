@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'myFont';
+    src: url('/font/font.ttf') format('truetype');
+}
+* {
+    font-family: myFont;
+}
