@@ -30,7 +30,12 @@
             weekday: [0, 1, 2, 3, 4, 5, 6],
             value: '',
             event: {
-                '2021-05-30':"{{asset('/img/下痢.jpg')}}",
+                @if($status==1)
+                '2021-06-10':"{{asset('/img/少し.jpg')}}",
+                @else
+                '2021-06-10':"{{asset('/img/下痢.jpg')}}",
+                @endif
+
             },
         }),
     })

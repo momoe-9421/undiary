@@ -23,11 +23,18 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $status=2;
+        return view('home',compact('status'));
     }
 
     public function chart()
     {
         return view('chart');
     }
+
+    public function about()
+    {
+        return view('about');
+    }
+
 }
