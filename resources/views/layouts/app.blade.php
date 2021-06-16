@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/locale/ja.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="{{asset('css/app.css')}}" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
@@ -34,48 +40,27 @@
                     nav
                     dense
                 >
-                    <v-list-item-group
-                        v-model="group"
-                        active-class="deep-purple--text text--accent-4"
-                    >
-                        <v-list-item>
-                            <v-list-item-icon>
-                                <v-icon>mdi-home</v-icon>
-                            </v-list-item-icon>
-                            <v-list-item-title>ホーム</v-list-item-title>
-                        </v-list-item>
 
-                        <v-list-item>
-                            <v-list-item-icon>
-                                <v-icon>mdi-account</v-icon>
-                            </v-list-item-icon>
-                            <v-list-item-title>アカウント</v-list-item-title>
-                        </v-list-item>
-                    </v-list-item-group>
+                    <v-list-item
+                    @click="goHome"
+                    >
+                        <v-list-item-icon>
+                            <v-icon>mdi-home</v-icon>
+                        </v-list-item-icon>
+                        <v-list-item-title>ホーム</v-list-item-title>
+                    </v-list-item>
+
+                    <v-list-item
+                        @click="goChart"
+                    >
+                        <v-list-item-icon>
+                            <v-icon>mdi-graph</v-icon>
+                        </v-list-item-icon>
+                        <v-list-item-title>グラフ</v-list-item-title>
+                    </v-list-item>
                 </v-list>
             </v-navigation-drawer>
             <div class="m-5">
-                <v-sheet
-                    tile
-                    height="54"
-                    class="d-flex"
-                >
-                    <v-btn
-                        icon
-                        class="ma-2"
-                        @click="$refs.calendar.prev()"
-                    >
-                        <v-icon>mdi-chevron-left</v-icon>
-                    </v-btn>
-                    <v-spacer></v-spacer>
-                    <v-btn
-                        icon
-                        class="ma-2"
-                        @click="$refs.calendar.next()"
-                    >
-                        <v-icon>mdi-chevron-right</v-icon>
-                    </v-btn>
-                </v-sheet>
                 @yield('content')
             </div>
         </v-card>
