@@ -20,6 +20,7 @@ class CreateDiariesTable extends Migration
             $table->date('date');
             $table->time('time');
             $table->text('momentum');
+            $table->text('color');
             $table->timestamps();
         });
     }

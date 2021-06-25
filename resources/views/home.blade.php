@@ -83,6 +83,13 @@
                         </div>
                     </div>
                     <div class="container">
+                        <p>色</p>
+                        <div class="form-check">
+                            <input class="form-color-input" type="color" name="color" id="color" value="#CD853F">
+                            <label class="form-color-input" for="color">うんちの色</label>
+                        </div>
+                    </div>
+                    <div class="container">
                         <p>うんちの状態</p>
                         <div class="row">
                             <div class="col-6">
