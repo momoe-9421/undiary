@@ -57,8 +57,10 @@ class HomeController extends Controller
         $benpi=Diary::where("user_id",Auth::id())->where('status',"便秘")->count();
         $sukoshi=Diary::where("user_id",Auth::id())->where('status',"少し")->count();
         $seiri=Diary::where("user_id",Auth::id())->where('status',"生理")->count();
+        $kaiben=Diary::where("user_id",Auth::id())->where('status',"快便")->count();
 
-        return view('chart',compact('dossari','geri','benpi','sukoshi','seiri'));
+
+        return view('chart',compact('dossari','geri','benpi','sukoshi','seiri','kaiben'));
     }
 
     public function about()

@@ -36,7 +36,7 @@
     >
         <template v-slot:day="{date}">
             <div v-if="event[date]" class="text-center">
-                <img class="mx-auto" style="width:50px;height:50px" :src="'/img/'+event[date][0]['status']+'.jpg'">
+                <img class="mx-auto" style="height:50px" :src="'/img/'+event[date][0]['status']+'.jpg'">
             </div>
         </template>
     </v-calendar>
@@ -113,7 +113,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="status" id="sukoshi" value="少し">
                                     <label class="form-check-label" for="sukoshi">
-                                        <img style="height:200px;width:200px" src="{{asset('/img/少し.jpg')}}">
+                                        <img style="height:300px;width:200px" src="{{asset('/img/少し.jpg')}}">
                                     </label>
                                 </div>
                             </div>
@@ -121,10 +121,19 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="status" id="seiri" value="生理">
                                     <label class="form-check-label" for="seiri">
-                                        <img style="height:200px;width:200px" src="{{asset('/img/生理.jpg')}}">
+                                        <img style="height:300px;width:200px" src="{{asset('/img/生理.jpg')}}">
                                     </label>
                                 </div>
                             </div>
+                            <div class="col-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="status" id="kaiben" value="快便">
+                                    <label class="form-check-label" for="kaiben">
+                                        <img style="height:200px;width:200px" src="{{asset('/img/快便.jpg')}}">
+                                    </label>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
