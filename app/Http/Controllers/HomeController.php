@@ -29,7 +29,7 @@ class HomeController extends Controller
         $diaries=Diary::where("user_id",Auth::id())->get();
         $events=[];
         foreach($diaries as $diary){
-            $events[$diary->date][]=["time"=>$diary->time,"status"=>$diary->status];
+            $events[$diary->date][]=["time"=>$diary->time,"status"=>$diary->status,"color"=>$diary->color];
         }
         return view('home',compact('events'));
     }
@@ -43,6 +43,7 @@ class HomeController extends Controller
         $diary->time=$request->request->get("time");
         $diary->user_id=Auth::id();
         $diary->momentum=$request->request->get("momentum");
+        $diary->color=$request->request->get("color");
         $diary->save();
 
         return redirect('/');

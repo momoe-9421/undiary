@@ -176,7 +176,8 @@
                 "{{$day}}":[
                         @foreach($event as $item)
                     {"status":"{{$item['status']}}",
-                        "time":"{{$item['time']}}"
+                        "time":"{{$item['time']}}",
+                        "color":"{{$item['color']}}"
                     },
                     @endforeach
                 ],
@@ -191,7 +192,8 @@
                 $("#record").empty();
                 if (this.event[e.date]){
                     this.event[e.date].forEach(function(data){
-                        $("#record").append("<tr><td>"+data["time"]+"</td><td>"+data["status"]+"</td></tr>")
+                        $("#record").append("<tr><td>"+data["time"]+"</td><td>"+data["status"]+"</td><td>"
+                        +'<input class="form-color-input" type="color" name="color" id="color" value="'+data["color"]+'">'+"</td></tr>")
                     });
                 }
                 $("#modalButton").click();
