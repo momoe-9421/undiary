@@ -25,13 +25,14 @@
 
         var data = {
             datasets: [{
-                data: [{{$dossari}}, {{$geri}}, {{$benpi}},{{$sukoshi}},{{$seiri}}],
+                data: [{{$dossari}}, {{$geri}}, {{$benpi}},{{$sukoshi}},{{$seiri}},{{$kaiben}}],
                 backgroundColor: [
                     "#BB5179",
                     "#FAFF67",
                     "#58A27C",
                     "#3c00ff",
                     "#bb20de",
+                    "#000000"
                 ]
             }],
             // これらのラベルは凡例とツールチップに表示されます。
@@ -40,7 +41,8 @@
                 '下痢',
                 '便秘',
                 '少し',
-                '生理'
+                '生理',
+                '快便'
             ]
         };
         var ctx = document.getElementById("myChart");
