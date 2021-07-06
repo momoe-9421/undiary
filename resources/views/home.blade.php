@@ -128,7 +128,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="status" id="seiri" value="生理">
                                     <label class="form-check-label" for="seiri">
-                                        <img style="height: 200px;px;width:200px" src="{{asset('/img/生理.jpg')}}">
+                                        <img style="height:200px;width:200px" src="{{asset('/img/生理.jpg')}}">
                                     </label>
                                 </div>
                             </div>
