@@ -6,13 +6,13 @@
 毎日の排便の様子を記録する事で健康を保てるようにと思った。看護学校の実習中だった友人が患者さんの排便の様子を記録しているのをみて思いついた。
 
 ## DEMO
-<img width="1435" alt="うんち記録　home" src="<img width="772" alt="2021-07-06 (8)" src="https://user-images.githubusercontent.com/83691850/127357362-a014ac6d-df8e-4bb3-b1df-4a0884fe552b.png">
+<img width="1435" alt="うんち記録" src="<img width="772" src="https://user-images.githubusercontent.com/83691850/127357362-a014ac6d-df8e-4bb3-b1df-4a0884fe552b.png">
 ">
-<img width="1440" alt="うんち記録　 選択画像" src="<img width="921" alt="2021-07-06 (12)" src="https://user-images.githubusercontent.com/83691850/127357503-467b6ecd-8dcd-4599-b969-c70e1eb789ad.png">
+<img width="1440" alt="うんち記録　選択画像" src="<img width="921" src="https://user-images.githubusercontent.com/83691850/127357503-467b6ecd-8dcd-4599-b969-c70e1eb789ad.png">
 ">
-<img width="1349" alt="うんち記録　選択画像" src="<img width="921" alt="2021-07-06 (11)" src="https://user-images.githubusercontent.com/83691850/127357715-6c9a706b-3477-45e4-bd10-33337c8ddd84.png">
+<img width="1349" alt="うんち記録　選択画像" src="<img width="921" src="https://user-images.githubusercontent.com/83691850/127357715-6c9a706b-3477-45e4-bd10-33337c8ddd84.png">
 ">
-<img width="413" alt="うんち記録　タスクバー" src="<img width="656" alt="2021-07-06 (9)" src="https://user-images.githubusercontent.com/83691850/127358288-5f69b37b-ee8b-46fb-af62-ad0b376a3ed8.png">
+<img width="413" alt="うんち記録　タスクバー" src="<img width="656" src="https://user-images.githubusercontent.com/83691850/127358288-5f69b37b-ee8b-46fb-af62-ad0b376a3ed8.png">
 ">
 
 ## Features
