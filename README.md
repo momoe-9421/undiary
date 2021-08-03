@@ -36,8 +36,8 @@
 
 ・https://shrouded-journey-60468.herokuapp.com/home にアクセス
 ・デモユーザーでログイン
-    ○ パスワードは password
-    ○ e-mail addressはmomon_9999@yahoo.co.jp
+    ○ パスワードは password<br>
+    ○ e-mail addressはmomon_9999@yahoo.co.jp<br>
 ・当日のカレンダーをタップ
 ・項目内容を記録
 
