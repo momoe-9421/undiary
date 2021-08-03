@@ -33,14 +33,14 @@
 
 
 ## Usage
-
-・https://shrouded-journey-60468.herokuapp.com/home にアクセス
-・デモユーザーでログイン
-    ○ パスワードは password<br>
-    ○ e-mail addressはmomon_9999@yahoo.co.jp<br>
-・当日のカレンダーをタップ
+<pre>
+・https://shrouded-journey-60468.herokuapp.com/home にアクセス<br>
+・デモユーザーでログイン<br>
+     ○ パスワードは password<br>
+     ○e-mail addressはmomon_9999@yahoo.co.jp<br>
+・当日のカレンダーをタップ<br>
 ・項目内容を記録
-
+</pre>
 
 
 
