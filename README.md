@@ -25,23 +25,21 @@
 より正確に打てるように色を自由に選べるようにした。可愛いイラストになるように意識して書いた。時間は打った時間が即時に記録出来るように自動入力にした。
 - PHP 8.0.3
 - Laravel 6.20.27
-- Docker 
 - MySQL 5.8
 - Vue.js
 - Vuetify
 - Bootstrap
-- Stripe
 
 
 
 ## Usage
 
-- https://shrouded-journey-60468.herokuapp.com/homeにアクセス
-- デモユーザーでログイン
-    -パスワードは password
-     e-mail addressはmomon_9999@yahoo.co.jp
-- 当日のカレンダーをタップ
-- 項目内容を記録
+- ・https://shrouded-journey-60468.herokuapp.com/home にアクセス
+- ・デモユーザーでログイン
+    -○ パスワードは password
+     ○ e-mail addressはmomon_9999@yahoo.co.jp
+- ・当日のカレンダーをタップ
+- ・項目内容を記録
 
 
 
