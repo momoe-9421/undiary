@@ -34,11 +34,11 @@
 
 ## Usage
 
-- https://shrouded-journey-60468.herokuapp.com/home にアクセス<br>
-- デモユーザーでログイン<br>
-    &emsp; ○ パスワードは password<br>
-    &emsp; ○e-mail addressはmomon_9999@yahoo.co.jp<br>
-- 当日のカレンダーをタップ<br>
+- https://shrouded-journey-60468.herokuapp.com/home にアクセス
+- デモユーザーでログイン
+     - パスワード：`password`
+    - e-mail address：`momon_9999@yahoo.co.jp`
+- 当日のカレンダーをタップ
 - 項目内容を記録
 
 
